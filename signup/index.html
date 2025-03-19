@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JOBS | Cadastrar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  
+  <script type="module" crossorigin src="/assets/signup-af7d4184.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-ec808ebb.js">
+  <link rel="modulepreload" crossorigin href="/assets/Input-7ac6837a.js">
+  <link rel="modulepreload" crossorigin href="/assets/index-2ac6b6ac.js">
+  <link rel="modulepreload" crossorigin href="/assets/MockServer-1f629502.js">
+  <link rel="modulepreload" crossorigin href="/assets/backBtn-d3480e68.js">
+  <link rel="stylesheet" href="/assets/index-5c6e31f1.css">
+</head>
+<body>
+  <main>
+    <section id="register">
+      <button id="back-btn">
+        <i class="fa-solid fa-arrow-left text-xs text-gray-6"></i>
+      </button>
+      <div class="content">
+        <img src="/img/logo-jobs.png" alt="Logo Jobs" />
+        <form>
+          <h1 class="text-xl text-gray-6 text-bold lg:mb-sm mb-xxs">
+            Cadastre-se
+          </h1>
+          <div class="lg:mb-xxs mb-xxs h-auto w-full">
+            <text-field
+              data-placeholder="Digite aqui"
+              data-label="Nome Completo"
+              data-type="text"
+              data-icon-left="fa-regular fa-user"
+              data-name="name"
+            ></text-field>
+          </div>
+          <div class="lg:mb-xxs mb-xxs h-auto w-full">
+            <text-field
+              data-label="Email"
+              data-placeholder="seuemail@email.com"
+              data-type="email"
+              data-icon-left="fa-regular fa-envelope"
+              data-name="email"
+            ></text-field>
+          </div>
+          <div class="lg:mb-xxs mb-xxs h-auto w-full">
+            <text-field
+              data-label="Confirme seu email"
+              data-placeholder="seuemail@email.com"
+              data-type="email"
+              data-icon-left="fa-regular fa-envelope"
+              data-name="email_confirm"
+            ></text-field>
+          </div>
+          <div class="lg:mb-xxs mb-xxs h-auto w-full">
+            <text-field
+              data-label="Senha"
+              data-placeholder="####"
+              data-name="pass"
+              data-pass
+            ></text-field>
+          </div>
+          <div class="h-auto w-full">
+            <text-field
+              data-label="Confirme sua senha"
+              data-placeholder="####"
+              data-name="pass_confirm"
+              data-pass
+            ></text-field>
+          </div>
+          <div class="inline-flex w-full mt-nano lg:mb-xxs mb-xxs items-center">
+            <label for="check" class="check-field p-quark flex items-center gap-nano text-xxxs text-gray-6 text-bold">
+              <div class="check-input">
+                <input checked id="check" name="privacy_policies" hidden type="checkbox"/>
+                <span>
+                  <i class="fa-solid fa-check"></i>
+                </span>
+              </div>
+              Li e aceito as 
+            </label>
+            <a class="text-bold underline text-xxxs hover:opacity-80 text-primary" href="/privacy_policies">
+              Políticas de Privacidade
+            </a>
+          </div>
+          <button class="w-full rounded-pill text-white hover:bg-gradient-1 text-bold hover:shadow-2 text-xxs mb-xxxs py-xxxs bg-primary">
+            Cadastrar
+          </button>
+        </form>
+        <div class="signup">
+          <p class="text-xxs text-bold text-gray-5">Já possui uma conta?</p>
+          <a class="text-bold text-xxs text-primary hover:underline" href="/signin/index.html">Faça Login</a>
+        </div>
+      </div>
+    </section>
+    <section id="banner">
+      <img class="lg:none block" src="/img/logo.png" alt="Logo" />
+      <img src="/img/img-l.png" alt="Img Banner"/>
+    </section>
+  </main>
+</body>
+</html>
