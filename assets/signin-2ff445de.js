@@ -1,0 +1,1 @@
+import{S as r}from"./index-684cc799.js";import"./Input-7ac6837a.js";const a=document.querySelector("#login form"),e=new r;a.addEventListener("submit",async t=>{t.preventDefault();const o=Object.fromEntries(new FormData(t.target));try{const{data:n}=await e.post("https://api.jobs.com.br/api/signin",o);alert("Logado"),location.replace("/")}catch{alert("Usuário não encontrado")}});
