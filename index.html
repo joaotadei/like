@@ -15,18 +15,18 @@
   <link rel="modulepreload" crossorigin href="/assets/menu-20eae783.js">
   <link rel="modulepreload" crossorigin href="/assets/MockServer-1f629502.js">
   <link rel="stylesheet" href="/assets/index-dbe8d720.css">
-  <style>
+  <style> 
     .div-btns {
-        display: none; /* Esconde por padrão */
+        display: none;
         flex-direction: column;
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
     }
     .btn-home {
         width: 100%;
-        padding: 15px;
+        padding: 12px;
         font-size: 18px;
         border: none;
         border-radius: 25px;
@@ -48,6 +48,9 @@
         }
     }
 </style>
+<script>
+
+</script>
 </head>
 <body>
   <main>
@@ -125,8 +128,8 @@
       </nav>
     </header>
     <div class="div-btns">
-      <button class="btn-home btn-register-home">Cadastre-se</button>
-      <button class="btn-home btn-login-home">Login</button>
+      <button class="btn-home btn-register-home" onclick={window.location="/signup/index.html"}>Cadastre-se</button>
+      <button class="btn-home btn-login-home" onclick={window.location="/signin/index.html"}>Login</button>
     </div>
     <section id="home">
       <div class="bg-white absolute w-full"></div>
