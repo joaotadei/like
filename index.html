@@ -15,6 +15,38 @@
   <link rel="modulepreload" crossorigin href="/assets/menu-20eae783.js">
   <link rel="modulepreload" crossorigin href="/assets/MockServer-1f629502.js">
   <link rel="stylesheet" href="/assets/index-dbe8d720.css">
+  <style>
+    .div-btns-home {
+        display: none; /* Oculta por padrão */
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .btn-home {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+    .signup-home {
+        background-color: blue;
+        color: white;
+    }
+    .login-home {
+        background-color: white;
+        color: black;
+        border-top: 1px solid #ccc;
+    }
+    @media (max-width: 1024px) { /* Exibe apenas em tablets e celulares */
+        .div-btns-home {
+            display: block;
+        }
+    }
+</style>
 </head>
 <body>
   <main>
@@ -92,6 +124,10 @@
       </nav>
     </header>
     <section id="home">
+      <div class="div-btns-home">
+        <button class="btn-home signup-home">Cadastre-se</button>
+        <button class="btn-home login-home">Login</button>
+    </div>
       <div class="bg-white absolute w-full"></div>
       <div class="bg-gray-1 absolute w-full"></div>
       <div class="w-full flex items-center justify-center px-xxs lg:px-sm relative">
