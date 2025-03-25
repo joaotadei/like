@@ -16,10 +16,6 @@
   <link rel="modulepreload" crossorigin href="/assets/MockServer-1f629502.js">
   <link rel="stylesheet" href="/assets/index-dbe8d720.css">
   <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
     .div-btns {
         display: none; /* Esconde por padrão */
         flex-direction: column;
@@ -47,7 +43,7 @@
         border: 2px solid blue;
     }
     @media (max-width: 1024px) {
-        .container {
+        .div-btns {
             display: flex;
         }
     }
@@ -128,11 +124,11 @@
         </div>
       </nav>
     </header>
+    <div class="div-btns">
+      <button class="btn-home btn-register-home">Cadastre-se</button>
+      <button class="btn-home btn-login-home">Login</button>
+    </div>
     <section id="home">
-      <div class="div-btns">
-        <button class="btn-home btn-register-home">Cadastre-se</button>
-        <button class="btn-home btn-login-home">Login</button>
-      </div>
       <div class="bg-white absolute w-full"></div>
       <div class="bg-gray-1 absolute w-full"></div>
       <div class="w-full flex items-center justify-center px-xxs lg:px-sm relative">
